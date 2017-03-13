@@ -1,0 +1,580 @@
+@media screen and (max-width: 1366px) {
+  /* line 3, ../sass/adap.scss */
+  header .logo {
+    width: 260px;
+    left: 100px;
+    height: 100px;
+  }
+  /* line 9, ../sass/adap.scss */
+  header .contact ul {
+    right: 3%;
+  }
+  /* line 14, ../sass/adap.scss */
+  header .menu ul {
+    right: 6.5%;
+  }
+}
+@media screen and (max-width: 1235px) {
+  /* line 23, ../sass/adap.scss */
+  header .logo {
+    left: 30px;
+  }
+  /* line 27, ../sass/adap.scss */
+  header .contact ul {
+    right: 0;
+  }
+  /* line 32, ../sass/adap.scss */
+  header .menu ul {
+    right: 3.5%;
+  }
+  /* line 34, ../sass/adap.scss */
+  header .menu ul li {
+    padding-left: 20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /* line 44, ../sass/adap.scss */
+  header .non {
+    display: block;
+  }
+  /* line 47, ../sass/adap.scss */
+  header .logo {
+    left: 0;
+  }
+  /* line 51, ../sass/adap.scss */
+  header .contact ul {
+    right: 0;
+  }
+  /* line 53, ../sass/adap.scss */
+  header .contact ul li {
+    padding-right: 20px;
+  }
+  /* line 55, ../sass/adap.scss */
+  header .contact ul li a {
+    font-size: 14px;
+  }
+  /* line 62, ../sass/adap.scss */
+  header .menu ul {
+    display: none;
+    right: 3.5%;
+  }
+  /* line 68, ../sass/adap.scss */
+  header .button_container {
+    position: fixed;
+    top: 60px;
+    right: 2%;
+    height: 27px;
+    width: 35px;
+    cursor: pointer;
+    z-index: 100;
+    transition: opacity .25s ease;
+  }
+  /* line 78, ../sass/adap.scss */
+  header .button_container:hover {
+    opacity: .7;
+  }
+  /* line 83, ../sass/adap.scss */
+  header .button_container.active .top {
+    transform: translateY(11px) translateX(0) rotate(45deg);
+    background: #FFF;
+  }
+  /* line 87, ../sass/adap.scss */
+  header .button_container.active .middle {
+    opacity: 0;
+    background: #FFF;
+  }
+  /* line 92, ../sass/adap.scss */
+  header .button_container.active .bottom {
+    transform: translateY(-11px) translateX(0) rotate(-45deg);
+    background: #FFF;
+  }
+  /* line 98, ../sass/adap.scss */
+  header .button_container span {
+    background: #248f40;
+    border: none;
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .35s ease;
+    cursor: pointer;
+  }
+  /* line 109, ../sass/adap.scss */
+  header .button_container span:nth-of-type(2) {
+    top: 11px;
+  }
+  /* line 113, ../sass/adap.scss */
+  header .button_container span:nth-of-type(3) {
+    top: 22px;
+  }
+  /* line 119, ../sass/adap.scss */
+  header .overlay {
+    position: fixed;
+    z-index: 10;
+    background: grey;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .35s, visibility .35s, height .35s;
+    overflow: hidden;
+  }
+  /* line 132, ../sass/adap.scss */
+  header .overlay.open {
+    opacity: .95;
+    visibility: visible;
+    height: 100%;
+  }
+  /* line 137, ../sass/adap.scss */
+  header .overlay.open li {
+    animation: fadeInRight .5s ease forwards;
+    animation-delay: .35s;
+  }
+  /* line 141, ../sass/adap.scss */
+  header .overlay.open li:nth-of-type(2) {
+    animation-delay: .4s;
+  }
+  /* line 144, ../sass/adap.scss */
+  header .overlay.open li:nth-of-type(3) {
+    animation-delay: .45s;
+  }
+  /* line 147, ../sass/adap.scss */
+  header .overlay.open li:nth-of-type(4) {
+    animation-delay: .50s;
+  }
+  /* line 152, ../sass/adap.scss */
+  header .overlay nav {
+    position: relative;
+    height: 40%;
+    top: 35%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    font-family: 'Vollkorn', serif;
+    font-weight: 400;
+    text-align: center;
+  }
+  /* line 162, ../sass/adap.scss */
+  header .overlay ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+  }
+  /* line 170, ../sass/adap.scss */
+  header .overlay ul li {
+    display: block;
+    height: 25%;
+    height: calc(100% / 4);
+    min-height: 50px;
+    position: relative;
+    opacity: 0;
+  }
+  /* line 178, ../sass/adap.scss */
+  header .overlay ul li a {
+    display: block;
+    position: relative;
+    color: #FFF;
+    text-decoration: none;
+    overflow: hidden;
+  }
+  /* line 185, ../sass/adap.scss */
+  header .overlay ul li a:hover:after, header .overlay ul li a:focus:after, header .overlay ul li a:active:after {
+    width: 100%;
+  }
+  /* line 191, ../sass/adap.scss */
+  header .overlay ul li a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0%;
+    transform: translateX(-50%);
+    height: 3px;
+    background: #FFF;
+    transition: .35s;
+  }
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      left: 20%;
+    }
+    100% {
+      opacity: 1;
+      left: 0;
+    }
+  }
+  /* line 217, ../sass/adap.scss */
+  header .w {
+    display: none;
+  }
+  /* line 221, ../sass/adap.scss */
+  header .fixed-logo {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 100px;
+    width: 100%;
+    cursor: pointer;
+    z-index: 9;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+  }
+  /* line 232, ../sass/adap.scss */
+  header .fixed-logo img {
+    height: 70px;
+    width: 70px;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 244, ../sass/adap.scss */
+  header .non {
+    display: block;
+  }
+  /* line 247, ../sass/adap.scss */
+  header .logo {
+    display: none;
+  }
+  /* line 251, ../sass/adap.scss */
+  header .contact ul {
+    left: 0;
+  }
+  /* line 253, ../sass/adap.scss */
+  header .contact ul li {
+    padding-right: 20px;
+  }
+  /* line 255, ../sass/adap.scss */
+  header .contact ul li a {
+    font-size: 10px;
+  }
+  /* line 259, ../sass/adap.scss */
+  header .contact ul li:last-child {
+    display: none;
+  }
+  /* line 264, ../sass/adap.scss */
+  header h1 {
+    display: block;
+    position: absolute;
+    top: 42px;
+    color: #fff;
+    font-size: 20px;
+    left: 36px;
+  }
+  /* line 273, ../sass/adap.scss */
+  header .menu ul {
+    display: none;
+    right: 3.5%;
+  }
+}
+@media screen and (max-width: 1366px) {
+  /* line 284, ../sass/adap.scss */
+  .main-carousel .carousel-cell .main-info {
+    left: 50px;
+  }
+  /* line 287, ../sass/adap.scss */
+  .main-carousel .carousel-cell #form-cont {
+    right: 20%;
+  }
+  /* line 288, ../sass/adap.scss */
+  .main-carousel .carousel-cell .main-form {
+    right: 20%;
+  }
+}
+@media screen and (max-width: 1235px) {
+  /* line 296, ../sass/adap.scss */
+  .main-carousel .carousel-cell .main-info {
+    left: 50px;
+  }
+  /* line 298, ../sass/adap.scss */
+  .main-carousel .carousel-cell .main-info h2 {
+    font-size: 40px;
+  }
+  /* line 301, ../sass/adap.scss */
+  .main-carousel .carousel-cell .main-info span {
+    font-size: 28px;
+  }
+  /* line 305, ../sass/adap.scss */
+  .main-carousel .carousel-cell .main-info .super-offer h3 {
+    font-size: 18px;
+  }
+  /* line 307, ../sass/adap.scss */
+  .main-carousel .carousel-cell .main-info .super-offer h3 span {
+    font-size: 22px;
+  }
+  /* line 311, ../sass/adap.scss */
+  .main-carousel .carousel-cell #form-cont {
+    right: 33%;
+  }
+  /* line 312, ../sass/adap.scss */
+  .main-carousel .carousel-cell .main-form {
+    right: 33%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /* line 319, ../sass/adap.scss */
+  .main-carousel .carousel-cell .main-info {
+    left: 5px;
+    top: 15%;
+  }
+  /* line 322, ../sass/adap.scss */
+  .main-carousel .carousel-cell .main-info h2 {
+    font-size: 25px;
+  }
+  /* line 325, ../sass/adap.scss */
+  .main-carousel .carousel-cell .main-info span {
+    font-size: 20px;
+  }
+  /* line 329, ../sass/adap.scss */
+  .main-carousel .carousel-cell .main-info .super-offer h3 {
+    font-size: 14px;
+  }
+  /* line 331, ../sass/adap.scss */
+  .main-carousel .carousel-cell .main-info .super-offer h3 span {
+    font-size: 18px;
+  }
+  /* line 334, ../sass/adap.scss */
+  .main-carousel .carousel-cell .main-info .timer {
+    padding-left: 0;
+  }
+  /* line 336, ../sass/adap.scss */
+  .main-carousel .carousel-cell .main-info .timer .doc {
+    margin-right: 20px;
+  }
+  /* line 341, ../sass/adap.scss */
+  .main-carousel .carousel-cell #form-cont {
+    right: 51%;
+    width: 280px;
+    height: 360px;
+    top: 14%;
+  }
+  /* line 347, ../sass/adap.scss */
+  .main-carousel .carousel-cell .main-form {
+    right: 51%;
+    width: 280px;
+    height: 360px;
+    top: 14%;
+  }
+  /* line 352, ../sass/adap.scss */
+  .main-carousel .carousel-cell .main-form h3 {
+    padding: 0 40px;
+  }
+  /* line 355, ../sass/adap.scss */
+  .main-carousel .carousel-cell .main-form p {
+    font-size: 14px;
+  }
+  /* line 358, ../sass/adap.scss */
+  .main-carousel .carousel-cell .main-form .form-inp {
+    width: 75%;
+    margin-left: 13%;
+  }
+  /* line 361, ../sass/adap.scss */
+  .main-carousel .carousel-cell .main-form .form-inp input[type=text], .main-carousel .carousel-cell .main-form .form-inp input[type=email], .main-carousel .carousel-cell .main-form .form-inp input[type=tel], .main-carousel .carousel-cell .main-form .form-inp select {
+    padding: 8px 20px;
+    margin: 6px 0;
+  }
+  /* line 365, ../sass/adap.scss */
+  .main-carousel .carousel-cell .main-form .form-inp input[type=submit] {
+    padding: 8px 20px;
+    margin: 16px 0;
+  }
+}
+@media screen and (max-width: 568px) {
+  /* line 376, ../sass/adap.scss */
+  .main-carousel .carousel-cell {
+    width: 100%;
+  }
+  /* line 378, ../sass/adap.scss */
+  .main-carousel .carousel-cell .main-info {
+    top: 0;
+    text-align: center;
+  }
+  /* line 381, ../sass/adap.scss */
+  .main-carousel .carousel-cell .main-info h2 {
+    font-size: 22px;
+  }
+  /* line 384, ../sass/adap.scss */
+  .main-carousel .carousel-cell .main-info span {
+    font-size: 18px;
+  }
+  /* line 388, ../sass/adap.scss */
+  .main-carousel .carousel-cell .main-info .super-offer h3 {
+    display: none;
+  }
+  /* line 392, ../sass/adap.scss */
+  .main-carousel .carousel-cell .main-info .timer {
+    display: none;
+  }
+  /* line 396, ../sass/adap.scss */
+  .main-carousel .carousel-cell #form-cont {
+    left: 25%;
+    width: 180px;
+    height: 260px;
+    top: 32%;
+  }
+  /* line 402, ../sass/adap.scss */
+  .main-carousel .carousel-cell .main-form {
+    left: 25%;
+    width: 180px;
+    height: 260px;
+    top: 32%;
+  }
+  /* line 407, ../sass/adap.scss */
+  .main-carousel .carousel-cell .main-form h3 {
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+  }
+  /* line 412, ../sass/adap.scss */
+  .main-carousel .carousel-cell .main-form p {
+    font-size: 12px;
+    text-align: center;
+    padding-left: 0;
+  }
+  /* line 417, ../sass/adap.scss */
+  .main-carousel .carousel-cell .main-form .form-inp {
+    width: 75%;
+    margin-left: 13%;
+  }
+  /* line 420, ../sass/adap.scss */
+  .main-carousel .carousel-cell .main-form .form-inp input[type=text], .main-carousel .carousel-cell .main-form .form-inp input[type=email], .main-carousel .carousel-cell .main-form .form-inp input[type=tel], .main-carousel .carousel-cell .main-form .form-inp select {
+    padding: 2px 20px;
+    margin: 4px 0;
+  }
+  /* line 424, ../sass/adap.scss */
+  .main-carousel .carousel-cell .main-form .form-inp input[type=submit] {
+    padding: 4px 6px;
+    margin: 4px 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /* line 435, ../sass/adap.scss */
+  .we-offer {
+    padding-top: 40px;
+  }
+  /* line 438, ../sass/adap.scss */
+  .we-offer .carousel {
+    padding: 0 100px;
+  }
+  /* line 441, ../sass/adap.scss */
+  .we-offer .carousel-cell {
+    width: 270px;
+    height: 710px;
+    margin-right: 10px;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+  }
+  /* line 448, ../sass/adap.scss */
+  .we-offer .flickity-prev-next-button.previous {
+    left: 1%;
+  }
+  /* line 449, ../sass/adap.scss */
+  .we-offer .flickity-prev-next-button.next {
+    right: 1%;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 454, ../sass/adap.scss */
+  .we-offer {
+    padding-top: 40px;
+  }
+  /* line 457, ../sass/adap.scss */
+  .we-offer .carousel {
+    padding: 0 100px;
+  }
+  /* line 460, ../sass/adap.scss */
+  .we-offer .carousel-cell {
+    width: 270px;
+    height: 710px;
+    margin-right: 10px;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+  }
+  /* line 467, ../sass/adap.scss */
+  .we-offer .flickity-prev-next-button.previous {
+    left: 1%;
+  }
+  /* line 468, ../sass/adap.scss */
+  .we-offer .flickity-prev-next-button.next {
+    right: 1%;
+  }
+}
+@media screen and (max-width: 1235px) {
+  /* line 474, ../sass/adap.scss */
+  .why-we .we-plus {
+    padding-left: 100px;
+  }
+  /* line 477, ../sass/adap.scss */
+  .why-we .we-plus .row .el {
+    margin-right: 15px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /* line 487, ../sass/adap.scss */
+  .why-we .we-plus {
+    padding-left: 0;
+    padding-top: 40px;
+  }
+  /* line 491, ../sass/adap.scss */
+  .why-we .we-plus .row .el {
+    margin-right: 15px;
+  }
+  /* line 496, ../sass/adap.scss */
+  .why-we .bot {
+    bottom: 10px;
+  }
+  /* line 498, ../sass/adap.scss */
+  .why-we .bot h5 {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 568px) {
+  /* line 506, ../sass/adap.scss */
+  .why-we {
+    height: 1500px;
+  }
+  /* line 508, ../sass/adap.scss */
+  .why-we h2 {
+    padding-top: 20px;
+    font-size: 28px;
+  }
+  /* line 512, ../sass/adap.scss */
+  .why-we h2:before {
+    display: none;
+  }
+  /* line 515, ../sass/adap.scss */
+  .why-we .we-plus {
+    padding-left: 0;
+    padding-top: 20px;
+  }
+  /* line 519, ../sass/adap.scss */
+  .why-we .we-plus .row .el {
+    padding-bottom: 10px;
+    margin-right: 0;
+  }
+  /* line 522, ../sass/adap.scss */
+  .why-we .we-plus .row .el img {
+    padding-left: 42%;
+    width: 56%;
+  }
+  /* line 526, ../sass/adap.scss */
+  .why-we .we-plus .row .el p {
+    font-size: 12px;
+  }
+  /* line 528, ../sass/adap.scss */
+  .why-we .we-plus .row .el p span {
+    font-size: 14px;
+  }
+  /* line 535, ../sass/adap.scss */
+  .why-we .bot {
+    bottom: 10px;
+  }
+  /* line 537, ../sass/adap.scss */
+  .why-we .bot h5 {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="utf-8">
+	<meta name="Keywords" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width" />
+
+	<title>Main page</title>
+  <link href="css/flickity.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+  <link href="css/adap.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  
+</head>
+<body>
+<header>
+<div class="logo"></div>
+<div class="contact">
+  <ul>
+    <li><a href="#">м.Львів, вул. Городоцька, 257</a></li>
+    <li><a href="#">+380 (067) 678 123 12</a></li>
+    <li><a href="#">Замовити дзвінок</a></li>
+  </ul>
+</div>
+<div class="menu">
+  <ul>
+    <li><a href="#">Акції та знижки</a></li>
+    <li><a href="#">Ціни</a></li>
+    <li><a href="#">Переваги</a></li>
+    <li><a href="#">Наші роботи</a></li>
+    <li><a href="#">Команда</a></li>
+    <li><a href="#">Схема роботи</a></li>
+    <li><a href="#">Відгуки</a></li>
+    <li><a href="#">Контакти</a></li>
+  </ul>
+</div>
+
+<div class="button_container" id="toggle" class="non">
+  <span class="top"></span>
+  <span class="middle"></span>
+  <span class="bottom"></span>
+</div>
+
+
+
+<div class="overlay" id="overlay" class="non">
+  <nav class="overlay-menu">
+    <ul class="non">
+      <li><a href="#">Акції та знижки</a></li>
+      <li><a href="#">Ціни</a></li>
+      <li><a href="#">Переваги</a></li>
+      <li><a href="#">Наші роботи</a></li>
+      <li><a href="#">Команда</a></li>
+      <li><a href="#">Схема роботи</a></li>
+      <li><a href="#">Відгуки</a></li>
+      <li><a href="#">Контакти</a></li>
+    </ul>
+  </nav>
+</div>
+
+<h1>Львівська майстерня вікон</h1>
+</header>
+<div class="main-carousel">
+  <div class="carousel-cell"><img src="img/header_bg.png" alt="">
+    <div class="main-info">
+      <h2>Забезпечте вашу сім’ю теплом!</h2>
+      <br><span>Замовляйте вікна від виробника з цінами <br>дешевше ринкових на 14%</span>
+      <div class="super-offer">
+      <h3>При замовленні до кінця тижня гарантуємо подарунок: <br> <span>москітна сітка на одне вікно</span></h3>
+      </div>
+      <div class="timer">
+      <div class="doc" id="days">
+          <div class="digit">0</div>
+          <div class="digit">0</div>
+                  <p class="r">Днів</p> 
+      </div>
+       
+      <div class="doc" id="hours">
+          <div class="digit">0</div>
+          <div class="digit">0</div>
+                  <p class="t">Годин</p> 
+      </div>
+       
+      <div class="doc" id="mins">
+          <div class="digit">0</div>
+          <div class="digit">0</div>
+           <p class="y">Хвилин</p>
+      </div>
+       
+      <div class="doc" id="sec">
+          <div class="digit">0</div>
+          <div class="digit">0</div>
+           <p class="u">Секунд</p>
+      </div>
+      
+      </div>
+    </div>
+    <div id="form-cont"></div>
+    <div class="main-form">
+      <h3>ОФОРМИТИ ЗАЯВКУ</h3>
+      <p>Наш менеджер <br> зателефонує Вам <br>протягом 15 хвилин</p>
+    <div class="form-inp">
+    <form action="action_page">
+    <input type="text" id="fname" name="firstname" placeholder="Ввудіть ім'я">
+    
+    <input type="email" id="mail" name="email" placeholder="Ввудіть e-mail">
+
+    <input type="tel" id="numb" name="number" placeholder="Ввудіть телефон">
+  
+    <input type="submit" value="ЗАМОВИТИ ЗАМІР">
+  </form>
+  </div>
+    </div>
+  </div>
+  <div class="carousel-cell"><img src="img/header_bg.png" alt=""></div>
+  <div class="carousel-cell"><img src="img/header_bg.png" alt=""></div>
+  <div class="carousel-cell"><img src="img/header_bg.png" alt=""></div>
+</div> 
+
+<div class="line"></div>
+
+<div class="we-offer">
+  <h2>Що ми пропонуємо</h2>
+    <div class="porada"><a href="#">Як правильно вибрати вікно</a></div>
+  <div class="carousel"
+  data-flickity='{ "contain": true }'>
+  <div class="carousel-cell">
+        <h3>Економ <br> вікно</h3>
+    <img src="img/window.png" alt="">
+    <div class="price1"><h4>Вікно<p>від <span>5059</span>₴</p></h4></div>
+    <div class="price2"><h4>Вікно <br> під ключ*<p>від <span>6059</span>₴</p></h4></div>
+     <a href="#"><div class="button-order"><span>ЗАМОВИТИ</span></div></a>
+     <h6>* - підвіконня 250 мм шириною,<br> зовнішній відлив 150 мм шириною <br> демонтаж старого, монтаж <br>нового</h6>
+  </div>
+  <div class="carousel-cell">
+        <h3>Економ <br> вікно</h3>
+    <img src="img/window.png" alt="">
+    <div class="price1"><h4>Вікно<p>від <span>5059</span>₴</p></h4></div>
+    <div class="price2"><h4>Вікно <br> під ключ*<p>від <span>6059</span>₴</p></h4></div>
+     <a href="#"><div class="button-order"><span>ЗАМОВИТИ</span></div></a>
+     <h6>* - підвіконня 250 мм шириною,<br> зовнішній відлив 150 мм шириною <br> демонтаж старого, монтаж <br>нового</h6>
+  </div>
+  <div class="carousel-cell">
+        <h3>Економ <br> вікно</h3>
+    <img src="img/window.png" alt="">
+    <div class="price1"><h4>Вікно<p>від <span>5059</span>₴</p></h4></div>
+    <div class="price2"><h4>Вікно <br> під ключ*<p>від <span>6059</span>₴</p></h4></div>
+     <a href="#"><div class="button-order"><span>ЗАМОВИТИ</span></div></a>
+     <h6>* - підвіконня 250 мм шириною,<br> зовнішній відлив 150 мм шириною <br> демонтаж старого, монтаж <br>нового</h6>
+  </div>
+  <div class="carousel-cell">
+        <h3>Економ <br> вікно</h3>
+    <img src="img/window.png" alt="">
+    <div class="price1"><h4>Вікно<p>від <span>5059</span>₴</p></h4></div>
+    <div class="price2"><h4>Вікно <br> під ключ*<p>від <span>6059</span>₴</p></h4></div>
+     <a href="#"><div class="button-order"><span>ЗАМОВИТИ</span></div></a>
+     <h6>* - підвіконня 250 мм шириною,<br> зовнішній відлив 150 мм шириною <br> демонтаж старого, монтаж <br>нового</h6>
+  </div>
+  <div class="carousel-cell">
+        <h3>Економ <br> вікно</h3>
+    <img src="img/window.png" alt="">
+    <div class="price1"><h4>Вікно<p>від <span>5059</span>₴</p></h4></div>
+    <div class="price2"><h4>Вікно <br> під ключ*<p>від <span>6059</span>₴</p></h4></div>
+     <a href="#"><div class="button-order"><span>ЗАМОВИТИ</span></div></a>
+     <h6>* - підвіконня 250 мм шириною,<br> зовнішній відлив 150 мм шириною <br> демонтаж старого, монтаж <br>нового</h6>
+  </div>
+  <div class="carousel-cell">
+        <h3>Економ <br> вікно</h3>
+    <img src="img/window.png" alt="">
+    <div class="price1"><h4>Вікно<p>від <span>5059</span>₴</p></h4></div>
+    <div class="price2"><h4>Вікно <br> під ключ*<p>від <span>6059</span>₴</p></h4></div>
+     <a href="#"><div class="button-order"><span>ЗАМОВИТИ</span></div></a>
+     <h6>* - підвіконня 250 мм шириною,<br> зовнішній відлив 150 мм шириною <br> демонтаж старого, монтаж <br>нового</h6>
+  </div>
+  <div class="carousel-cell">
+        <h3>Економ <br> вікно</h3>
+    <img src="img/window.png" alt="">
+    <div class="price1"><h4>Вікно<p>від <span>5059</span>₴</p></h4></div>
+    <div class="price2"><h4>Вікно <br> під ключ*<p>від <span>6059</span>₴</p></h4></div>
+     <a href="#"><div class="button-order"><span>ЗАМОВИТИ</span></div></a>
+     <h6>* - підвіконня 250 мм шириною,<br> зовнішній відлив 150 мм шириною <br> демонтаж старого, монтаж <br>нового</h6>
+  </div>
+</div>
+
+</div>
+
+<div class="why-we">
+  <h2>Чому саме ми ?</h2>
+  <div class="we-plus">
+    <div class="row">
+      <div class="col-md-3 col-sm-3 col-xs-12">
+        <div class="poser el"><img src="img/poser.png" alt="">
+        <p><span>Без посередників</span> <br> Ми є ексклюзивною <br> точкою продажу <br> від виробник</p>
+        </div>
+        <div class="dosvid el"><img src="img/dosvid.png" alt="">
+        <p>Кожен наш працівник <br>має <span> досвід понад 3 роки </span> <br>у тій роботі, яку він виконує</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-12">
+        <div class="day5 el"><img src="img/day5.png" alt="">
+        <p><span>Швидше, ніж за 5 днів</span> <br> з моменту замовлення<br> Ваше вікно буде <br>встановлено</p>
+        </div>
+        <div class="free el"><img src="img/free.png" alt="">
+        <p><span>Безкоштовні</span> консультації <br>та заміри</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-12">
+        <div class="clear el"><img src="img/clear.png" alt="">
+        <p><span>Чистота,</span> <br> після себе ми завжди <br>залишаємо порядок</p>
+        </div>
+        <div class="reliably el"><img src="img/reliably.png" alt="">
+        <p><span>Надійно,</span> тільки <br>сертифіковані матеріали<br> та комплектуючі</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-12">
+        <div class="time-work el"><img src="img/time-work.png" alt="">
+        <p><span> Працюємо без вихідних! </span> <br>  Телефонуйте з 8:00 до 24:00</p>
+        </div>
+        <div class="guarantee el"><img src="img/guarantee.png" alt="">
+        <p>15 років<br> <span>реальної гарантії!</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row bot">
+  <div class="col-md-12">
+  <h5>Вікна - це найвразливіше місце у Вашій оселі. Шум, пил, мороз постійно проникають всередину і захист від <br> цього лише один - якісне вікно. Керуючись, ми роками вдосконалювали наші вікна та <br> виробили надійну систему монтажу, яка гарантовано забезпечить максимальний захист від зовнішніх<br>одразників. Замовляйте вікна у Львівської Майстерні Вікон та отримайте окрім хороших вікон, надійну <br> підтримку наших працівників.</h5>
+  </div>
+  </div>
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="js/flickity.pkgd.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
